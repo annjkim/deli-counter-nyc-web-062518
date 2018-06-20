@@ -21,4 +21,5 @@ def now_serving(next_customer)
   else
     puts "Currently serving #{next_customer[0]}."
     next_customer.shift
-    
+  end
+end

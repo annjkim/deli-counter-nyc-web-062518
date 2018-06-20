@@ -1,12 +1,14 @@
-def line(katz_deli)
-  line_length = []
-  if katz_deli.length == 0
-    puts "The line is currently empty."
+def line(array)
+  if array.length >= 1
+    new_array = []
+    counter = 1 
+    array.each do |name|
+      new_array.push("#{counter}. #{name}")
+      counter += 1 
+    end 
+    puts "The line is currently: #{new_array.join(" ")}"
   else
-    line_length.each.with_index(0) do |name, index|
-    line_method_array.push("#{index}. #{name}")
-  end
-    puts "The line is: #{line_length.join(" ")}"
+    puts "The line is currently empty."
   end
 end
 
